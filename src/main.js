@@ -3,8 +3,8 @@
 //I allowed the player to control the rocket after it being fired.
 //I created a new animated sprite for the SpaceShip enemies
 //I changed the game's artwork making a stream of water with fish and a bobber to create a theme about fishing.
-//I changed the sfx
-//And I implemented a two player mode.
+//I changed the sfx to make
+//And I implemented a two player mode. There are two bobbers which you are teaming up with another player to get more points
 let config = {
     type: Phaser.CANVAS,
     width: 640,
