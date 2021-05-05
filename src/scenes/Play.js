@@ -16,6 +16,7 @@ class Play extends Phaser.Scene {
 
     create() {
         // place tile sprite
+        //Create stream background
         this.stream = this.add.tileSprite(0, 0, 640, 480, 'stream').setOrigin(0, 0);
 
         // green UI background
@@ -23,6 +24,7 @@ class Play extends Phaser.Scene {
         
         
         // add Rocket (p1)
+        //create Bobbers players
         this.p1Bobber = new Bobber(this, game.config.width/2, game.config.height - borderUISize - borderPadding, 'bobber').setOrigin(0.5, 0);
         this.p2Bobber = new Bobber2(this, game.config.width/2, game.config.height - borderUISize - borderPadding, 'bobber').setOrigin(1.5, 0);
         // add Fishs (x3)
@@ -40,6 +42,7 @@ class Play extends Phaser.Scene {
         keySPACE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
         // animation config
+        //create reeling
         this.anims.create({
             key: 'reelin',
             frames: this.anims.generateFrameNumbers('reel', { start: 0, end: 9, first: 0}),
